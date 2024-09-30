@@ -215,7 +215,7 @@ const Home = () => {
             <div className="px-4 mx-auto max-w-7xl sm:px-6">
               <Image
                 className="relative rounded-lg shadow-lg"
-                src="/assets/new_shot2.png"
+                src="/assets/new_shot.png"
                 alt="App screenshot"
                 height={700}
                 width={1200}
