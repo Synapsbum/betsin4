@@ -1,5 +1,4 @@
 import { db } from '@/lib/db';
-import bcrypt from 'bcryptjs'; // bcrypt import edildi
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -7,16 +6,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { email, password } = req.body;
+    const { email } = req.body;
 
-    // Şifreyi hash'liyoruz
-    const hashedPassword = bcrypt.hashSync(password, 10);
-
-    // Kullanıcıyı email ve hashlenmiş şifre ile kaydediyoruz
     const user = await db.user.create({
       data: {
         email,
-        password: hashedPassword, // Şifreyi hashlenmiş şekilde kaydediyoruz
       },
     });
 

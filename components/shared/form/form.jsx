@@ -10,9 +10,6 @@ import { Share2, GithubIcon } from 'lucide-react';
 export default function Form({ type }) {
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [isGithubLoading, setIsGithubLoading] = useState(false);
-  const [isCredentialsLoading, setIsCredentialsLoading] = useState(false); // Yeni eklendi
-  const [email, setEmail] = useState(""); // Yeni eklendi
-  const [password, setPassword] = useState(""); // Yeni eklendi
   const searchParams = useSearchParams();
   const next = searchParams?.get('next');
 
@@ -21,66 +18,8 @@ export default function Form({ type }) {
     error && toast.error(error);
   }, [searchParams]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsCredentialsLoading(true); // Giriş işlemi başladığında yükleme durumu
-    const res = await signIn('credentials', {
-      redirect: false,
-      email,
-      password,
-    });
-    setIsCredentialsLoading(false); // Giriş tamamlandığında yükleme durumu biter
-
-    if (res?.error) {
-      toast.error(res.error); // Hata varsa gösterilir
-    } else {
-      window.location.href = next || '/'; // Başarılı girişte yönlendirme yapılır
-    }
-  };
-
   return (
     <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 sm:px-16">
-      {type === 'login' && (
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-sm">
-              E-posta
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded-md"
-            />
-          </div>
-          <div>
-            <label htmlFor="password" className="block text-sm">
-              Şifre
-            </label>
-            <input
-              id="password"
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded-md"
-            />
-          </div>
-          <button
-            type="submit"
-            className={`${
-              isCredentialsLoading
-                ? 'cursor-not-allowed border-gray-200 bg-gray-100'
-                : 'border-black bg-black text-white hover:bg-white hover:text-black'
-            } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
-          >
-            {isCredentialsLoading ? <LoadingDots color="#808080" /> : 'Giriş Yap'}
-          </button>
-        </form>
-      )}
-
       <button
         onClick={() => {
           setIsGoogleLoading(true);
