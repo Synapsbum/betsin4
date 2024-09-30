@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/auth/callback/github": {
+    "api/**/*": {
       "maxDuration": 60
     }
   }
