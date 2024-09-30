@@ -10,7 +10,7 @@ export default function Register() {
   return (
     <>
       <Head>
-        <title>Librelinks | Register</title>
+        <title>Giriş.bio | Kayıt Ol</title>
       </Head>
 
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] flex  items-center justify-center ">
@@ -23,7 +23,7 @@ export default function Register() {
               {route === '/register' ? 'Create your account' : 'Welcome back'}
             </h3>
             <p className="text-sm text-gray-500">
-              Get started for free. No credit card required
+              Hemen Ücretsiz bio link sayfanı oluştur.
             </p>
           </div>
           <Form type="register" />

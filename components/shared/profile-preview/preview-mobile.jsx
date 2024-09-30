@@ -127,13 +127,13 @@ const PreviewMobile = ({ close }) => {
               style={{ color: theme.accent }}
               className="text-sm text-semibold text-center lg:text-lg"
             >
-              Made with{' '}
+              {' '} ile oluşturulmuştur.
               <Link
                 className="font-semibold"
                 target="_blank"
-                href="https://twitter.com/NerdyProgramme2"
+                href="https://giris.bio/"
               >
-                Librelinks
+                Giriş.bio
               </Link>
             </p>
           </footer>

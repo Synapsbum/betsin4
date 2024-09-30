@@ -7,9 +7,9 @@ import Head from 'next/head';
 import { useSession } from 'next-auth/react';
 
 export const metadata = {
-  title: 'Librelinks',
+  title: 'Giriş.bio',
   description:
-    'Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence.',
+    'Size veya İşletmenize ait linkleri kolayca düzenleyip yayınlayın. Tamamen Ücretsiz!',
 };
 
 const Home = () => {
@@ -19,17 +19,17 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Librelinks | A free & opensource link in bio tool</title>
+        <title>Giriş.bio | Ücretsiz Link Yönetim Uygulaması</title>
         {/* <!-- Open Graph (OG) meta tags --> */}
-        <meta property="og:url" content="https://librelinks.vercel.app/" />
-        <meta property="og:url" content="https://librelinks.me/" />
-        <meta property="og:url" content="https://www.librelinks.me/" />
+        <meta property="og:url" content="https://giris.bio/" />
+        <meta property="og:url" content="https://giris.bio/" />
+        <meta property="og:url" content="https://www.giris.bio/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name"
-          content="Librelinks - The free & opensource link in bio tool"
+          content="Giriş.bio | Ücretsiz Link Yönetim Uygulaması"
         />
-        <meta property="og:title" content="Librelinks" />
+        <meta property="og:title" content="Giriş.bio" />
         <meta
           property="og:description"
           content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
@@ -37,41 +37,41 @@ const Home = () => {
         <meta
           property="og:image"
           itemprop="image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://giris.bio/og2.png"
         />
         <meta
           property="og:image"
           itemprop="image"
-          content="https://librelinks.me/og.png"
+          content="https://giris.bio/og2.png"
         />
         <meta
           property="og:image"
           itemprop="image"
-          content="https://www.librelinks.me/og.png"
+          content="https://www.giris.bio/og2.png"
         />
 
         {/* <!-- Twitter Card meta tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@urdadx" />
-        <meta name="twitter:creator" content="@urdadx" />
+        <meta name="twitter:site" content="Giriş.bio" />
+        <meta name="twitter:creator" content="Betsin" />
         <meta
           property="twitter:domain"
-          content="https://librelinks.vercel.app/"
+          content="https://www.giris.bio/"
         />
-        <meta property="twitter:domain" content="https://librelinks.me/" />
-        <meta property="twitter:domain" content="https://www.librelinks.me/" />
-        <meta property="twitter:url" content="https://librelinks.vercel.app/" />
-        <meta name="twitter:title" content="Librelinks" />
+        <meta property="twitter:domain" content="https://www.giris.bio/" />
+        <meta property="twitter:domain" content="https://www.giris.bio/" />
+        <meta property="twitter:url" content="https://www.giris.bio/" />
+        <meta name="twitter:title" content="Giriş.bio" />
         <meta
           name="twitter:description"
           content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
         />
         <meta
           name="twitter:image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://librelinks.vercel.app/og2.png"
         />
-        <meta name="twitter:image" content="https://librelinks.me/og.png" />
-        <meta name="twitter:image" content="https://www.librelinks.me/og.png" />
+        <meta name="twitter:image" content="https://librelinks.me/og2.png" />
+        <meta name="twitter:image" content="https://www.librelinks.me/og2.png" />
         <meta
           data-rh="true"
           name="twitter:image:alt"
@@ -81,15 +81,15 @@ const Home = () => {
         {/* <!-- LinkedIn meta tags --> */}
         <meta
           property="og:linkedin:image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://librelinks.vercel.app/og2.png"
         />
         <meta
           property="og:linkedin:image"
-          content="https://librelinks.me/og.png"
+          content="https://librelinks.me/og2.png"
         />
         <meta
           property="og:linkedin:image"
-          content="https://www.librelinks.me/og.png"
+          content="https://www.librelinks.me/og2.png"
         />
         <meta property="og:linkedin:title" content="Librelinks" />
         <meta
@@ -100,15 +100,15 @@ const Home = () => {
         {/* <!-- Facebook meta tags --> */}
         <meta
           property="og:facebook:image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://librelinks.vercel.app/og2.png"
         />
         <meta
           property="og:facebook:image"
-          content="https://librelinks.me/og.png"
+          content="https://librelinks.me/og2.png"
         />
         <meta
           property="og:facebook:image"
-          content="https://www.librelinks.me/og.png"
+          content="https://www.librelinks.me/og2.png"
         />
         <meta property="og:facebook:title" content="Librelinks" />
         <meta
@@ -119,15 +119,15 @@ const Home = () => {
         {/* <!-- Instagram meta tags --> */}
         <meta
           property="og:instagram:image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://librelinks.vercel.app/og2.png"
         />
         <meta
           property="og:instagram:image"
-          content="https://librelinks.me/og.png"
+          content="https://librelinks.me/og2.png"
         />
         <meta
           property="og:instagram:image"
-          content="https://www.librelinks.me/og.png"
+          content="https://www.librelinks.me/og2.png"
         />
         <meta property="og:instagram:title" content="Librelinks" />
         <meta
@@ -138,15 +138,15 @@ const Home = () => {
         {/* <!-- Pinterest meta tags --> */}
         <meta
           property="og:pinterest:image"
-          content="https://librelinks.vercel.app/og.png"
+          content="https://librelinks.vercel.app/og2.png"
         />
         <meta
           property="og:pinterest:image"
-          content="https://librelinks.me/og.png"
+          content="https://librelinks.me/og2.png"
         />
         <meta
           property="og:pinterest:image"
-          content="https://www.librelinks.me/og.png"
+          content="https://www.librelinks.me/og2.png"
         />
         <meta property="og:pinterest:title" content="Librelinks" />
         <meta
@@ -170,7 +170,7 @@ const Home = () => {
                   className="flex items-center gap-2 font-bold text-xl"
                   href="/"
                 >
-                  <h3 className="lg:block">Librelinks</h3>
+                  <h3 className="lg:block">Giriş.bio</h3>
                 </Link>
 
                 <div className="relative items-center w-28 z-10 md:absolute md:inset-y-0 md:right-0">
@@ -179,33 +179,19 @@ const Home = () => {
                     rel="noopener noreferrer"
                     href="/admin"
                   >
-                    {isAuthenticated ? 'Admin' : 'Login'}
+                    {isAuthenticated ? 'Admin' : 'Giriş Yap'}
                   </Link>
                 </div>
               </nav>
             </div>
             <div className="px-4 mx-auto mt-24 max-w-7xl sm:mt-16 sm:px-6">
-              <div className="flex justify-center items-center mb-6">
-                <a
-                  className="group inline-flex items-center gap-2 px-4 py-4 text-sm bg-gray-50 border rounded-3xl text-gray-500 w-[180px] h-[35px] justify-center transition-colors hover:bg-gray-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/urdadx/librelinks"
-                >
-                  <div className="">
-                    <GithubStar />
-                  </div>{' '}
-                  Star us on Github
-                </a>
-              </div>
               <div className="text-center">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block">The free & opensource</span>
-                  <span className="hero-title block ">link in bio tool</span>
+                  <span className="block">Tüm linkleriniz için</span>
+                  <span className="hero-title block ">Giriş.bio</span>
                 </h1>
                 <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                  Librelinks is an opensource link in bio tool that helps you
-                  easily manage your links, transforming your online presence.
+                  Size veya İşletmenize ait linkleri kolayca düzenleyip yayınlayın. Tamamen Ücretsiz!
                 </p>
               </div>
               <div className="flex justify-center mt-6">
@@ -213,7 +199,7 @@ const Home = () => {
                   <span className="inline-flex rounded-xl shadow">
                     <Link legacyBehavior href="/register">
                       <a className="inline-flex items-center px-4 py-2 font-medium text-lg gradient-btn border border-transparent rounded-xl text-white w-[190px] h-[50px] justify-center hover:shadow-lg">
-                        Get started
+                        Hemen Başla
                       </a>
                     </Link>
                   </span>
@@ -229,7 +215,7 @@ const Home = () => {
             <div className="px-4 mx-auto max-w-7xl sm:px-6">
               <Image
                 className="relative rounded-lg shadow-lg"
-                src="/assets/new_shot.png"
+                src="/assets/new_shot2.png"
                 alt="App screenshot"
                 height={700}
                 width={1200}
@@ -245,14 +231,14 @@ const Home = () => {
                 className="hover:text-emerald-500"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://twitter.com/NerdyProgramme2"
+                href="https://betsin.link"
               >
-                @urdadx
+                Betsin
               </a>
             </h2>
             <div className="flex items-center gap-4 justify-center mt-4">
               <a
-                href="https://x.com/NerdyProgramme2"
+                href="https://betsin.link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter logo"
@@ -260,7 +246,7 @@ const Home = () => {
                 <TwitterIcon color="white" />
               </a>
               <a
-                href="https://github.com/urdadx"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github logo"
@@ -268,7 +254,7 @@ const Home = () => {
                 <GithubIcon color="white" />
               </a>
               <a
-                href="https://urdadx.vercel.app/"
+                href="https://betsin.link"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="insta logo"

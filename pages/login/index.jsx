@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>Librelinks | Login</title>
+        <title>Giriş.bio | Giriş Yap</title>
       </Head>
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] flex  items-center justify-center ">
         <div className="z-10 w-full max-w-md overflow-hidden rounded-2xl border border-gray-100 shadow-xl">
@@ -15,9 +15,9 @@ export default function Login() {
             <Link href="/">
               <Wand color="black" size={30} />
             </Link>
-            <h3 className="text-xl font-semibold">Sign in to your account</h3>
+            <h3 className="text-xl font-semibold">Hesabına Giriş Yap</h3>
             <p className="text-sm text-gray-500">
-              Start transforming your online presence✨
+              Ücretsiz Link Bio Sayfanı oluştur✨
             </p>
           </div>
           <Form type="login" />
