@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/auth/*": {
+    "api/*": {
       "maxDuration": 60
     }
   }
