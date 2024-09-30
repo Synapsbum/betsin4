@@ -1,6 +1,6 @@
 export const siteConfig = {
   showName: true,
-  name: 'Librelinks.',
+  name: 'Giriş.bio',
   ghost: `bg-transparent p-2 flex space-x-2 items-center hover:bg-slate-100 rounded-xl`,
   description: ' Open Source Linktree Alternative for developers',
   mainNav: [],

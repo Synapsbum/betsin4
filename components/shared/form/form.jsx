@@ -5,9 +5,11 @@ import Link from 'next/link';
 import GoogleIcon from '@/components/utils/google-icon';
 import { useSearchParams } from 'next/navigation';
 import toast from 'react-hot-toast';
+import { Share2, GithubIcon } from 'lucide-react';
 
 export default function Form({ type }) {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
+  const [isGithubLoading, setIsGithubLoading] = useState(false);
   const searchParams = useSearchParams();
   const next = searchParams?.get('next');
 
@@ -20,22 +22,43 @@ export default function Form({ type }) {
     <div className="flex flex-col space-y-4 bg-gray-50 px-4 py-8 sm:px-16">
       <button
         onClick={() => {
-          setIsLoading(true);
+          setIsGoogleLoading(true);
           signIn('google', {
             ...(next && next.length > 0 ? { callbackUrl: next } : {}),
           });
         }}
         className={`${
-          isLoading
+          isGoogleLoading
             ? 'cursor-not-allowed border-gray-200 bg-gray-100'
             : 'border-black bg-black text-white hover:bg-white hover:text-black'
         } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
       >
-        {isLoading ? (
+        {isGoogleLoading ? (
           <LoadingDots color="#808080" />
         ) : (
           <p className="flex gap-2 items-center font-semibold">
             <GoogleIcon /> Continue with Google
+          </p>
+        )}
+      </button>
+      <button
+        onClick={() => {
+          setIsGithubLoading(true);
+          signIn('github', {
+            ...(next && next.length > 0 ? { callbackUrl: next } : {}),
+          });
+        }}
+        className={`${
+          isGithubLoading
+            ? 'cursor-not-allowed border-gray-200 bg-gray-100'
+            : 'border-black bg-black text-white hover:bg-white hover:text-black'
+        } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
+      >
+        {isGithubLoading ? (
+          <LoadingDots color="#808080" />
+        ) : (
+          <p className="flex gap-2 items-center font-semibold">
+            <GithubIcon /> Continue with Github
           </p>
         )}
       </button>
