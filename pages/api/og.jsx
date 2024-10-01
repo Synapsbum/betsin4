@@ -61,7 +61,7 @@ export default async function handler() {
             lineHeight: 1.4,
           }}
         >
-          <span>A free & opensource link in bio tool 🚀</span>
+          <span>Ücretsiz bio sayfanı oluştur! 🚀</span>
         </div>
       </div>
     ),
