@@ -25,8 +25,6 @@ const Home = () => {
         <meta property="og:url" content="https://giris.bio/" />
         <meta property="og:url" content="https://www.giris.bio/" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.png" type="image/png">
-
         <meta
           property="og:site_name"
           content="Giriş.bio | Ücretsiz Link Yönetim Uygulaması"
