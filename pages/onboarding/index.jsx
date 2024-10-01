@@ -19,7 +19,7 @@ const Onboarding = () => {
       e.preventDefault();
       setIsLoading(true);
       if (!handle || handle.trim() === '') {
-        toast.error('Please fill the form');
+        toast.error('Lütfen formu eksiksiz doldurun!');
         setIsLoading(false);
         return;
       }
@@ -28,7 +28,7 @@ const Onboarding = () => {
         setIsLoading(false);
         if (response.status === 200) {
           setIsExploding(true);
-          toast.success(`${handle} is yours 🎉`);
+          toast.success(`${handle} artık senin! 🎉`);
           setTimeout(() => {
             router.push('/admin');
           }, 1500);
@@ -73,7 +73,7 @@ const Onboarding = () => {
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <div className="mx-auto h-[30px] w-[30px] bg-slate-900 rounded-full" />
           <h2 className="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            <Balancer>Claim your unique handle ✨</Balancer>
+            <Balancer>Bio Sayfana bir isim ver! ✨</Balancer>
           </h2>
         </div>
         <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -86,13 +86,13 @@ const Onboarding = () => {
                     htmlFor="handle"
                     className="block text-sm font-medium leading-6 text-gray-700"
                   >
-                    Type your handle
+                    Sayfana benzersiz bir isim ver
                   </label>
                 </div>
                 <div className="mt-2 flex justify-center">
                   <input
                     id="handle"
-                    placeholder="ex: naruto"
+                    placeholder="ex: Betsin Resmi Giriş"
                     value={handle}
                     onChange={handleOnChange}
                     type="text"
@@ -102,7 +102,7 @@ const Onboarding = () => {
                 </div>
                 {handleTaken && (
                   <small className="text-red-500">
-                    {handle} is not available
+                    {handle} kullanılabilir değil.
                   </small>
                 )}
               </div>
@@ -121,7 +121,7 @@ const Onboarding = () => {
                     </div>
                   </>
                 ) : (
-                  <span className="text-md">Submit 🚀</span>
+                  <span className="text-md">Tamamdır! 🚀</span>
                 )}
               </button>
             </div>
