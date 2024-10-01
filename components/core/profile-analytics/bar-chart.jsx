@@ -58,7 +58,7 @@ const Chart = ({ analytics }) => {
               </BarChart>
             ) : (
               <div>
-                <Loader bgColor={'black'} message={'Fetching data'} />
+                <Loader bgColor={'black'} message={'Yükleniyor'} />
               </div>
             )}
           </ResponsiveContainer>

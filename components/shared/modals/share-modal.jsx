@@ -54,7 +54,7 @@ const ShareModal = () => {
           >
             <div className="flex flex-row justify-between items-center mb-1">
               <Dialog.Title className="text-xl text-center font-medium mb-2 sm:mb-0 sm:mr-4">
-                Bio'nu Paylaş
+                Sayfanı Paylaş
               </Dialog.Title>
 
               <Dialog.Close className="flex flex-end justify-end">
@@ -150,7 +150,7 @@ const ShareModal = () => {
                   />
 
                   <p className="mt-4 text-center text-gray-700">
-                  Bio'nuza Erişim sağlamak için bu QR kodunu hedef kitlenizle paylaşın.
+                  Bio sayfanıza Erişim sağlamak için bu QR kodunu hedef kitlenizle paylaşın.
                   </p>
                   <button
                     onClick={downloadQRCode}

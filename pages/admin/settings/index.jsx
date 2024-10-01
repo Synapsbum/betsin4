@@ -176,11 +176,10 @@ const Settings = () => {
           </div>
 
           <div className="max-w-[690px] mx-auto my-10">
-            <h3 className="text-xl font-semibold mb-1">Danger Zone</h3>
+            <h3 className="text-xl font-semibold mb-1">Hesabı Sil</h3>
             <h3 className="mb-4 text-gray-600 text-sm">
               <Balancer>
-                Deleting your account permanently deletes your page and all your
-                data.
+              Hesabınızı sildiğinizde sayfanız ve tüm bilgileriniz kalıcı olarak silinir.
               </Balancer>
             </h3>
             <div className="w-full h-auto border bg-white rounded-lg p-6 ">
@@ -190,7 +189,7 @@ const Settings = () => {
                     className="border-none w-full lg:w-[200px] rounded-lg h-auto p-3
 									  text-white bg-red-600 hover:bg-red-500"
                   >
-                    Delete Account
+                    Hesabı Sil
                   </button>
                 </AlertDialog.Trigger>
                 <CustomAlert {...deleteAlertProps} />

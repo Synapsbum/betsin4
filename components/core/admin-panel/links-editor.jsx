@@ -127,7 +127,7 @@ const LinksEditor = () => {
                 Henüz bir link eklemediniz.
               </h3>
               <p className="text-sm text-[#555] text-center px-3">
-                Hemen Link ekleyerek bio'nu oluştur🚀
+                Hemen Link ekle!🚀
               </p>
             </div>
           )}

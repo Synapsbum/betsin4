@@ -11,10 +11,10 @@ import useDeviceAnalytics from '@/hooks/useDeviceAnalytics';
 
 export function AnalyticsDashboard() {
   const options = [
-    { value: 'last_hour', label: 'Last hour' },
-    { value: 'last_24_hours', label: 'Last 24 hours' },
-    { value: 'last_7_days', label: 'Last 7 days' },
-    { value: 'last_30_days', label: 'Last 30 days' },
+    { value: 'last_hour', label: 'Son 1 Saat' },
+    { value: 'last_24_hours', label: 'Son 24 Saat' },
+    { value: 'last_7_days', label: 'Son 7 Gün' },
+    { value: 'last_30_days', label: 'Son 30 Gün' },
   ];
 
   const { data: currentUser } = useCurrentUser();
