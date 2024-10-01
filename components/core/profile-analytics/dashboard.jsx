@@ -27,7 +27,7 @@ export function AnalyticsDashboard() {
   return (
     <>
       <div className="flex w-full items-center justify-between">
-        <h3 className="text-xl font-semibold">Analytics</h3>
+        <h3 className="text-xl font-semibold">İstatistikler</h3>
         <Select
           onChange={(option) => setFilter(option.value)}
           className="w-[170px]"

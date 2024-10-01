@@ -27,12 +27,12 @@ const LinkStats = () => {
   return (
     <>
       <div className="mt-10 w-full">
-        <h3 className="text-xl font-semibold">Top performing links</h3>
+        <h3 className="text-xl font-semibold">En İyi Performans Gösteren Linkler</h3>
         <div className="rounded-xl mt-4 border bg-white h-auto p-4">
           <div className="">
-            <h3 className="font-semibold text-md px-3 pb-1">My Links</h3>
+            <h3 className="font-semibold text-md px-3 pb-1">Linkler</h3>
             <p className="text-gray-500 text-sm px-3 mb-2">
-              Get useful insights on each link
+            Her bağlantıyla ilgili veriler
             </p>
           </div>
           <div className="h-full w-full">
@@ -65,7 +65,7 @@ const LinkStats = () => {
                         <div className="flex items-center ml-auto gap-2 font-medium">
                           <BarChart className="text-gray-500" size={17} />
                           <h4 className="text-md text-gray-500">
-                            {userLink.clicks} clicks
+                            {userLink.clicks} Tıklama
                           </h4>
                         </div>
                       </div>
@@ -74,7 +74,7 @@ const LinkStats = () => {
                   <div className="flex flex-col gap-2 w-[180px] mx-auto py-6">
                     <StarSVG />
                     <h2 className="text-center">
-                      No links added yet{' '}
+                      Henüz link eklenmedi.{' '}
                       <span role="img" aria-label="face holding back tears">
                         🥹
                       </span>
@@ -82,7 +82,7 @@ const LinkStats = () => {
                         className="font-semibold text-blue-600 hover:underline underline-offset-1"
                         href="/admin"
                       >
-                        Create one now
+                        Hemen bir tane oluştur!
                       </Link>
                     </h2>
                   </div>
@@ -94,14 +94,14 @@ const LinkStats = () => {
                         className="text-blue-500 font-medium"
                         onClick={handleShowLess}
                       >
-                        Show Less
+                        Daha az Göster
                       </button>
                     ) : (
                       <button
                         className="text-blue-500 font-medium"
                         onClick={handleShowMore}
                       >
-                        Show More
+                        Daha Fazlasını Göster
                       </button>
                     )}
                   </div>

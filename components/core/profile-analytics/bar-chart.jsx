@@ -21,7 +21,7 @@ const Chart = ({ analytics }) => {
   return (
     <>
       <div className="mt-4 rounded-xl border bg-white py-4 px-2 w-full h-auto">
-        <p className="font-semibold text-sm px-3 pb-2">Total visits</p>
+        <p className="font-semibold text-sm px-3 pb-2">Toplam Ziyaretçi</p>
         <div className="flex items-center gap-2 font-semibold text-2xl px-3 pb-2">
           {analytics ? (
             <h3>{calculateTotalViews(analytics)}</h3>

@@ -13,14 +13,14 @@ const NotFound = () => {
         </div>
         <h3 className="text-lg lg:text-3xl text-center">
           <Balancer>
-            The page you&apos;re looking for doesn&apos;t exist
+            Görünüşe göre bu sayfa yanlış.
           </Balancer>
         </h3>
         <h3 className="text-sm lg:text-lg text-center">
           <Balancer>
-            Want this to be your handle?
+            Sen de bir bio oluşturmak istersen 
             <Link className="underline" href="/register">
-              Create your account now
+              Hemen Ücretsiz oluştur.
             </Link>
             🚀
           </Balancer>

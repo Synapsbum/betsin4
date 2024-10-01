@@ -13,7 +13,7 @@ const FontPicker = () => {
   return (
     <>
       <div className="max-w-[640px] mx-auto my-10">
-        <h3 className="text-xl font-semibold">Fonts</h3>
+        <h3 className="text-xl font-semibold">Fontlar</h3>
         <div className="mt-4 rounded-2xl border bg-white p-4 w-full h-auto">
           <h4 className="mb-2 text-sm font-semibold">Font</h4>
           <Dialog.Root>

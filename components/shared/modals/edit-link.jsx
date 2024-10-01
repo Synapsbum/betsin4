@@ -36,14 +36,14 @@ const EditLinkModal = ({ id, title, url, close }) => {
   const handleEditLink = async () => {
     if (newTitle.trim() === '' || newUrl.trim() === '') {
       close();
-      toast.error('Please fill the form');
+      toast.error('Lütfen formu eksiksiz olarak doldurun.');
       return;
     }
     close(); // close drawer
     await toast.promise(editMutation.mutateAsync({ newTitle, newUrl }), {
-      loading: 'Editing link',
-      success: 'Link edited successfully',
-      error: 'An error occured',
+      loading: 'Link Düzenleniyor...',
+      success: 'Link başarıyla düzenlendi!',
+      error: 'Bir hata oluştu! Betsin_3456',
     });
   };
 
@@ -67,7 +67,7 @@ const EditLinkModal = ({ id, title, url, close }) => {
           >
             <div className="flex flex-row justify-between items-center mb-4">
               <Dialog.Title className="text-xl text-center font-medium mb-2 sm:mb-0 sm:mr-4">
-                Edit Link
+                Linki Düzenle
               </Dialog.Title>
               <Dialog.Close className="flex flex-end justify-end">
                 <div
@@ -100,7 +100,7 @@ const EditLinkModal = ({ id, title, url, close }) => {
                 />
                 {urlError && (
                   <small className="text-red-500 text-sm">
-                    Enter a valid url
+                    Geçerli URL Gir
                   </small>
                 )}
               </div>
@@ -112,7 +112,7 @@ const EditLinkModal = ({ id, title, url, close }) => {
                         			text-lg mt-2 text-white bg-slate-800 hover:bg-slate-900 rounded-3xl 
                         			focus:outline-none focus:shadow-outline-blue"
                 >
-                  Edit link{' '}
+                  Linki Düzenle{' '}
                   <span role="img" aria-label="sparkling star">
                     ✨
                   </span>

@@ -92,7 +92,7 @@ const ProfilePage = () => {
   return (
     <>
       <Head>
-        <title> @{handle} | Librelinks</title>
+        <title> @{handle} | Giriş.bio</title>
       </Head>
       {!query.isIframe ? (
         <Script
@@ -184,7 +184,7 @@ const ProfilePage = () => {
                 style={{ color: theme.neutral }}
                 className="pt-8 text-md text-white font-semibold lg:text-2xl"
               >
-                Hello World 🚀
+                Selamlar! 🚀
               </h3>
             </div>
           )}
@@ -196,7 +196,6 @@ const ProfilePage = () => {
               style={{ color: theme.accent }}
               className="text-sm text-semibold text-center w lg:text-lg"
             >
-              {' '} ile oluşturulmuştur.
               <Link
                 className="font-semibold"
                 target="_blank"
@@ -204,6 +203,7 @@ const ProfilePage = () => {
               >
                 Giriş.bio
               </Link>
+              {' '} ile oluşturulmuştur.
             </p>
           </footer>
         ) : (

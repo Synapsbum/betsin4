@@ -42,8 +42,8 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
     setOpenPopover(false);
     setOpenDrawer(false);
     await toast.promise(archiveMutation.mutateAsync(), {
-      loading: 'Applying changes',
-      success: 'Changes applied successfully',
+      loading: 'Değişiklikler uygulanıyor...',
+      success: 'Değişiklikler Uygulandı!',
       error: 'An error occured',
     });
     setIsArchived(!isArchived);
@@ -65,8 +65,8 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
     setOpenPopover(false);
     setOpenDrawer(false);
     await toast.promise(deleteMutation.mutateAsync(), {
-      loading: 'Deleting link',
-      success: 'Link deleted successfully',
+      loading: 'Link Siliniyor...',
+      success: 'Link başarıyla silindi!',
       error: 'An error occured',
     });
   };
@@ -81,19 +81,19 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
 
   const deleteAlertProps = {
     action: handleDeleteLink,
-    title: 'Delete Link?',
-    desc: 'Are you sure you want to delete this link? This action cannot be undone.',
-    confirmMsg: 'Yes, delete link',
+    title: 'Linki Sil?',
+    desc: 'Linki silmek istediğinizden emin misiniz? bu işlem geri alınamaz.',
+    confirmMsg: 'Evet, sil gitsin.',
     close: (!openPopover && closeDrawer) || (!openDrawer && closePopOver),
   };
 
   const archiveProps = {
     action: handleToggleArchiving,
-    title: !isArchived ? 'Archive Link?' : 'Unarchive Link?',
+    title: !isArchived ? 'Linki Arşivle?' : 'Linki Arşivden Çıkar?',
     desc: !isArchived
-      ? "Archived links will still work - they just won't show up on your main page."
-      : 'By unarchiving this link, it will show up on your main page again.',
-    confirmMsg: !isArchived ? 'Yes, archive' : 'Yes, unarchive',
+      ? "Arşivlenen bağlantılar çalışmaya devam edecek; yalnızca ana sayfanızda görünmeyecekler."
+      : 'Bu bağlantıyı arşivden çıkardığınızda ana sayfanızda tekrar görünecektir.',
+    confirmMsg: !isArchived ? 'Evet, Arşivle' : 'Evet, Arşivden Çıkar',
     close: (!openPopover && closeDrawer) || (!openDrawer && closePopOver),
   };
 
@@ -134,7 +134,7 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
           <Dialog.Root>
             <Dialog.Trigger asChild>
               <button className="group flex w-full items-center justify-between rounded-md p-3 text-sm font-medium text-gray-500 transition-all duration-75 hover:bg-gray-100">
-                <h4>Edit</h4>
+                <h4>Düzenle</h4>
                 <Edit size={17} color="gray" />
               </button>
             </Dialog.Trigger>
@@ -148,7 +148,7 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
           <AlertDialog.Root>
             <AlertDialog.Trigger asChild>
               <button className="group flex w-full items-center justify-between rounded-md p-3 text-sm font-medium text-gray-500 transition-all duration-75 hover:bg-gray-100">
-                <h4>{!isArchived ? 'Archive' : 'Unarchive'}</h4>
+                <h4>{!isArchived ? 'Arşivle' : 'Arşivden Çıkar'}</h4>
                 <ArchiveIcon size={17} color="gray" />
               </button>
             </AlertDialog.Trigger>
@@ -157,7 +157,7 @@ const PopoverDesktop = ({ id, title, url, archived }) => {
           <AlertDialog.Root>
             <AlertDialog.Trigger asChild>
               <button className="group flex w-full items-center justify-between rounded-md p-3 text-sm font-medium text-red-400 transition-all duration-75 hover:bg-red-500 hover:text-white">
-                <h4>Delete</h4>
+                <h4>Sil</h4>
                 <Trash size={17} className="text-b-400 hover:text-white" />
               </button>
             </AlertDialog.Trigger>

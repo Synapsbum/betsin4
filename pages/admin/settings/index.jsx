@@ -115,7 +115,7 @@ const Settings = () => {
   return (
     <>
       <Head>
-        <title>Librelinks | Settings</title>
+        <title>Ayarlar | Giriş.bio</title>
       </Head>
       <Layout>
         <div className="w-full lg:basis-3/5 pl-4 pr-4 border-r overflow-scroll">
@@ -135,7 +135,7 @@ const Settings = () => {
                     <Dialog.Root>
                       <Dialog.Trigger asChild>
                         <button className="relative w-full lg:w-[490px] h-[45px] border rounded-3xl border-[#000] outline-none text-white bg-slate-900 p-2 hover:bg-slate-700">
-                          Pick an image
+                          Bir Resim Seç
                         </button>
                       </Dialog.Trigger>
                       <UploadModal
@@ -150,7 +150,7 @@ const Settings = () => {
                     className="w-full lg:w-[490px] h-[45px] border border-[#aaa] 
                     outline-none font-semibold text-slate-900 bg-white p-2 rounded-3xl hover:bg-gray-100"
                   >
-                    Remove
+                    Kaldır
                   </button>
                 </div>
               </div>

@@ -19,12 +19,12 @@ export const LocationStats = ({ analytics }) => {
   return (
     <>
       <div className="mt-10 w-full">
-        <h3 className="text-xl font-semibold">Top Locations</h3>
+        <h3 className="text-xl font-semibold">Ziyaretçi Ülke Sıralaması</h3>
         <div className="rounded-xl mt-4 border bg-white h-auto p-4">
           <div className="">
-            <h3 className="font-semibold text-md px-3 pb-1">Visitors</h3>
+            <h3 className="font-semibold text-md px-3 pb-1">Ziyaretçiler</h3>
             <p className="text-gray-500 text-sm px-3 mb-2">
-              Track visitors on your page by country
+            Sayfanızdaki ziyaretçileri ülkelere göre izleyin
             </p>
           </div>
           <div className="w-full h-auto">
@@ -65,7 +65,7 @@ export const LocationStats = ({ analytics }) => {
                 ))
             ) : (
               <div className="my-6 flex justify-center">
-                <h3 className="text-center">No data available</h3>
+                <h3 className="text-center">Veri yok</h3>
               </div>
             )}
 
@@ -76,14 +76,14 @@ export const LocationStats = ({ analytics }) => {
                     className="text-blue-500 font-medium"
                     onClick={handleShowLess}
                   >
-                    Show Less
+                    Daha az Göster
                   </button>
                 ) : (
                   <button
                     className="text-blue-500 font-medium"
                     onClick={handleShowMore}
                   >
-                    Show More
+                    Daha Fazlasını Göster
                   </button>
                 )}
               </div>

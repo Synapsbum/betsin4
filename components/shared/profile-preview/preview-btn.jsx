@@ -23,7 +23,7 @@ const PreviewBtn = () => {
           className="block py-2 px-6 rounded-full bg-slate-700 first-letter
 					text-white text-center font-bold text-lg shadow-lg hover:bg-slate-600"
         >
-          Preview
+          Demo Görünüm
         </button>
       </div>
 

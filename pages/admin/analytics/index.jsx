@@ -7,7 +7,7 @@ const Analytics = () => {
   return (
     <>
       <Head>
-        <title>Librelinks | Analytics</title>
+        <title>İstatistikler | Giriş.bio</title>
       </Head>
       <Layout>
         <div className="w-full lg:w-[100vw] pl-4 pr-4 overflow-auto">

@@ -86,7 +86,7 @@ const LinksEditor = () => {
                 className="bg-slate-900 w-full font-medium flex justify-center gap-1 
                 				items-center h-12 px-8 rounded-3xl text-white hover:bg-slate-700"
               >
-                <Plus /> Add link
+                <Plus /> Link Ekle
               </button>
             </div>
           </Dialog.Trigger>
@@ -124,10 +124,10 @@ const LinksEditor = () => {
                 src="/assets/not-found.png"
               />
               <h3 className="font-bold text-lg mt-3 text-[#222]">
-                You don&apos;t have any links yet
+                Henüz bir link eklemediniz.
               </h3>
               <p className="text-sm text-[#555] text-center px-3">
-                Please click on the button above to add your first link 🚀
+                Hemen Link ekleyerek bio'nu oluştur🚀
               </p>
             </div>
           )}

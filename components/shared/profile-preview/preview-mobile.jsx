@@ -115,7 +115,7 @@ const PreviewMobile = ({ close }) => {
                 style={{ color: theme.neutral }}
                 className="pt-8 text-md text-white font-semibold lg:text-2xl"
               >
-                Hello World 🚀
+                Selamlar! 🚀
               </h3>
             </div>
           )}
@@ -127,7 +127,6 @@ const PreviewMobile = ({ close }) => {
               style={{ color: theme.accent }}
               className="text-sm text-semibold text-center lg:text-lg"
             >
-              {' '} ile oluşturulmuştur.
               <Link
                 className="font-semibold"
                 target="_blank"
@@ -135,6 +134,7 @@ const PreviewMobile = ({ close }) => {
               >
                 Giriş.bio
               </Link>
+              {' '} ile oluşturulmuştur.
             </p>
           </footer>
         )}

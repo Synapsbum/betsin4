@@ -89,7 +89,7 @@ const LinkCard = (props) => {
                           <p className="whitespace-nowrap text-sm text-gray-500">
                             {props.clicks}
                             <span className="ml-1 hidden sm:inline-block">
-                              clicks
+                              Tıklama
                             </span>
                           </p>
                         </Link>
@@ -116,7 +116,7 @@ const LinkCard = (props) => {
             <button className="flex justify-center items-center ">
               <div className="flex items-center">
                 <small className="mr-8 hidden whitespace-nowrap text-sm text-gray-500 sm:block">
-                  Added {timeAgo(props.createdAt, true)}
+                  {timeAgo(props.createdAt, true)} önce eklendi
                 </small>
                 <PopoverDesktop {...props} />
               </div>

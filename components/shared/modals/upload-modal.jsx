@@ -60,7 +60,7 @@ const UploadModal = ({ onChange, value, submit }) => {
       setBase64('');
       setDisableUpload(true);
     } else {
-      toast.error('No file selected: Pick an image first');
+      toast.error('Önce Resim Seçmelisin!');
       return;
     }
   };
@@ -76,7 +76,7 @@ const UploadModal = ({ onChange, value, submit }) => {
         >
           <div className="flex flex-row justify-between items-center mb-4">
             <Dialog.Title className="text-xl text-center font-medium mb-2 sm:mb-0 sm:mr-4">
-              Upload Image
+              Resim Yükle
             </Dialog.Title>
             <Dialog.Close className="flex flex-end justify-end">
               <div className="p-2 rounded-full flex justify-center items-center bg-gray-100 hover:bg-gray-300">
@@ -109,17 +109,17 @@ const UploadModal = ({ onChange, value, submit }) => {
                   href="#"
                   className="text-sm text-center text-blue-900 mt-4 hover:underline"
                 >
-                  Change photo
+                  Resmi Değiştir
                 </a>
               </div>
             ) : (
               <>
                 <div className="mb-4">
                   <h3 className="text-center text-slate-800 text-md font-semibold mb-2 sm:text-lg">
-                    Choose files or drag and drop
+                    Bir resim seç veya buraya sürükle-bırak.
                   </h3>
                   <h3 className="text-center text-slate-800">
-                    (Max file size 5MB)
+                    (Maksimum dosya boyutu: 5MB)
                   </h3>
                 </div>
                 <div className="my-10 absolute top-1/2 transform -translate-y-1/2 lg:my-6">
@@ -133,7 +133,7 @@ const UploadModal = ({ onChange, value, submit }) => {
               onClick={handleUploadPfp}
               className="inline-block w-full px-4 py-4 bg-slate-900 leading-none text-lg mt-2 text-white rounded-3xl hover:bg-slate-700"
             >
-              Upload image{' '}
+              Resmi Yükle{' '}
               <span role="img" aria-label="rocket">
                 🚀
               </span>

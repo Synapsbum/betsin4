@@ -26,7 +26,7 @@ const PopoverMobile = ({
             <Dialog.Trigger asChild>
               <button className="group flex w-full items-center gap-4 rounded-md p-3 text-sm font-medium text-gray-500 transition-all duration-75 hover:bg-gray-100">
                 <Edit size={20} color="gray" />
-                <h3 className="text-lg">Edit</h3>
+                <h3 className="text-lg">Düzenle</h3>
               </button>
             </Dialog.Trigger>
             <EditLinkModal
@@ -41,7 +41,7 @@ const PopoverMobile = ({
               <button className="group flex w-full items-center gap-4 rounded-md p-3 text-sm font-medium text-gray-500 transition-all duration-75 hover:bg-gray-100">
                 <ArchiveIcon size={20} color="gray" />
                 <h3 className="text-lg">
-                  {!isArchived ? 'Archive' : 'Unarchive'}
+                  {!isArchived ? 'Arşivle' : 'Arşivden Çıkar'}
                 </h3>
               </button>
             </AlertDialog.Trigger>
@@ -51,7 +51,7 @@ const PopoverMobile = ({
             <AlertDialog.Trigger asChild>
               <button className="group flex w-full items-center gap-4 rounded-md p-3 text-sm font-medium text-red-400 transition-all duration-75 hover:bg-red-500 hover:text-white">
                 <Trash size={20} className="text-b-400 hover:text-white" />
-                <h3 className="text-lg">Delete</h3>
+                <h3 className="text-lg">Sil</h3>
               </button>
             </AlertDialog.Trigger>
             <CustomAlert close={closeDrawer} {...deleteAlertProps} />

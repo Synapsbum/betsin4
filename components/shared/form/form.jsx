@@ -37,7 +37,7 @@ export default function Form({ type }) {
           <LoadingDots color="#808080" />
         ) : (
           <p className="flex gap-2 items-center font-semibold">
-            <GoogleIcon /> Continue with Google
+            <GoogleIcon /> Google ile Devam Et
           </p>
         )}
       </button>
@@ -58,23 +58,23 @@ export default function Form({ type }) {
           <LoadingDots color="#808080" />
         ) : (
           <p className="flex gap-2 items-center font-semibold">
-            <GithubIcon /> Continue with Github
+            <GithubIcon /> GitHub ile Devam Et
           </p>
         )}
       </button>
 
       {type === 'login' ? (
         <p className="text-center text-sm text-gray-600">
-          Don&apos;t have an account?{' '}
+          HEsabın yok mu? {' '}
           <Link href="/register" className="font-semibold text-gray-800">
-            Sign up
+            Hemen oluştur
           </Link>
         </p>
       ) : (
         <p className="text-center text-sm text-gray-600">
-          Already have an account?{' '}
+          Zaten bir hesabın var mı?{' '}
           <Link href="/login" className="font-semibold text-gray-800">
-            Sign in
+            Giriş Yap
           </Link>
         </p>
       )}

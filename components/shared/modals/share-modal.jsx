@@ -54,7 +54,7 @@ const ShareModal = () => {
           >
             <div className="flex flex-row justify-between items-center mb-1">
               <Dialog.Title className="text-xl text-center font-medium mb-2 sm:mb-0 sm:mr-4">
-                Share your Link
+                Bio'nu Paylaş
               </Dialog.Title>
 
               <Dialog.Close className="flex flex-end justify-end">
@@ -85,7 +85,7 @@ const ShareModal = () => {
                   <div className="mb-6">
                     <div className="mt-2 mb-4">
                       <p className="text-sm">
-                        Add this link to your{' '}
+                        Şununla Paylaş:{' '}
                         <a
                           target="_blank"
                           href={goTo.twitter}
@@ -111,7 +111,7 @@ const ShareModal = () => {
                         </a>{' '}
                         bio{' '}
                         <span aria-label="rocket">
-                          to make it accessible from anywhere.
+                          
                         </span>
                       </p>
                     </div>
@@ -150,15 +150,14 @@ const ShareModal = () => {
                   />
 
                   <p className="mt-4 text-center text-gray-700">
-                    Share this QR code with your audience to provide access to
-                    your profile.
+                  Bio'nuza Erişim sağlamak için bu QR kodunu hedef kitlenizle paylaşın.
                   </p>
                   <button
                     onClick={downloadQRCode}
                     className="mt-4 w-full py-3 px-4 text-center text-white bg-slate-900 hover:bg-slate-700
 					          rounded-md focus:outline-none focus:shadow-outline-blue"
                   >
-                    Download QR Code
+                    QR Kodu İndir
                   </button>
                 </Tabs.Content>
               </div>

@@ -65,7 +65,7 @@ const ThemesPicker = () => {
   return (
     <>
       <div className="max-w-[640px] mx-auto my-6">
-        <h3 className="text-xl font-semibold">Themes</h3>
+        <h3 className="text-xl font-semibold">Temalar</h3>
         <div className="my-4 grid grid-cols-2 lg:grid-cols-3 rounded-2xl auto-rows-max gap-4 max-w-md md:gap-6 md:max-w-2xl lg:max-w-3xl p-4 mx-auto md:basis-3/5 w-full overflow-y-auto bg-white">
           {displayedThemes?.map((theme) => (
             <div
@@ -108,7 +108,7 @@ const ThemesPicker = () => {
             className="block mx-auto mt-4 text-white bg-blue-600 rounded-lg py-2 px-4 hover:bg-blue-800"
             onClick={handleShowMore}
           >
-            Show More
+            Daha Fazlasını Göster
           </button>
         )}
         {showAll && (
@@ -116,7 +116,7 @@ const ThemesPicker = () => {
             className="block mx-auto mt-4 text-white bg-blue-600 rounded-lg py-2 px-4 hover:bg-blue-800"
             onClick={handleShowLess}
           >
-            Show Less
+            Daha Az Göster
           </button>
         )}
       </div>

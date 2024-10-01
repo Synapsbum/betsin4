@@ -32,7 +32,7 @@ const Home = () => {
         <meta property="og:title" content="Giriş.bio" />
         <meta
           property="og:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
         <meta
           property="og:image"
@@ -64,94 +64,94 @@ const Home = () => {
         <meta name="twitter:title" content="Giriş.bio" />
         <meta
           name="twitter:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
         <meta
           name="twitter:image"
-          content="https://librelinks.vercel.app/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
-        <meta name="twitter:image" content="https://librelinks.me/og2.png" />
-        <meta name="twitter:image" content="https://www.librelinks.me/og2.png" />
+        <meta name="twitter:image" content="https://www.giris.bio/og2.png" />
+        <meta name="twitter:image" content="https://www.giris.bio/og2.png" />
         <meta
           data-rh="true"
           name="twitter:image:alt"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
 
         {/* <!-- LinkedIn meta tags --> */}
         <meta
           property="og:linkedin:image"
-          content="https://librelinks.vercel.app/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:linkedin:image"
-          content="https://librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:linkedin:image"
-          content="https://www.librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
-        <meta property="og:linkedin:title" content="Librelinks" />
+        <meta property="og:linkedin:title" content="Giris.bio" />
         <meta
           property="og:linkedin:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
 
         {/* <!-- Facebook meta tags --> */}
         <meta
           property="og:facebook:image"
-          content="https://librelinks.vercel.app/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:facebook:image"
-          content="https://librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:facebook:image"
-          content="https://www.librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
-        <meta property="og:facebook:title" content="Librelinks" />
+        <meta property="og:facebook:title" content="Giris.bio" />
         <meta
           property="og:facebook:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
 
         {/* <!-- Instagram meta tags --> */}
         <meta
           property="og:instagram:image"
-          content="https://librelinks.vercel.app/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:instagram:image"
-          content="https://librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:instagram:image"
-          content="https://www.librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
-        <meta property="og:instagram:title" content="Librelinks" />
+        <meta property="og:instagram:title" content="Giris.bio" />
         <meta
           property="og:instagram:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
 
         {/* <!-- Pinterest meta tags --> */}
         <meta
           property="og:pinterest:image"
-          content="https://librelinks.vercel.app/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:pinterest:image"
-          content="https://librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
         <meta
           property="og:pinterest:image"
-          content="https://www.librelinks.me/og2.png"
+          content="https://www.giris.bio/og2.png"
         />
-        <meta property="og:pinterest:title" content="Librelinks" />
+        <meta property="og:pinterest:title" content="Giris.bio" />
         <meta
           property="og:pinterest:description"
-          content="Librelinks is an opensource link in bio tool that helps you easily manage your links, transforming your online presence."
+          content="Kendi Bio sayfanı hemen oluştur. Üstelik tamamen Ücretsiz!"
         />
       </Head>
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
@@ -226,7 +226,6 @@ const Home = () => {
         <div className="bg-slate-900">
           <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
             <h2 className="text-lg font-semibold tracking-wide text-center text-gray-400">
-              Made by{' '}
               <a
                 className="hover:text-emerald-500"
                 target="_blank"
@@ -234,7 +233,7 @@ const Home = () => {
                 href="https://betsin.link"
               >
                 Betsin
-              </a>
+              </a> tarafından geliştirilmiştir.
             </h2>
             <div className="flex items-center gap-4 justify-center mt-4">
               <a

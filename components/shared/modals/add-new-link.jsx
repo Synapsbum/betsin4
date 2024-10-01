@@ -47,13 +47,13 @@ const AddLinkModal = () => {
 
   const submitLink = async () => {
     if (title.trim() === '' || url.trim() === '') {
-      toast.error('Please fill the form');
+      toast.error('Lütfen formu eksiksiz olarak doldurun.');
       return;
     }
     await toast.promise(addLinkMutation.mutateAsync({ title, url, order }), {
-      loading: 'Adding link',
-      success: 'Link added successfully',
-      error: 'An error occured',
+      loading: 'Link Ekleniyor...',
+      success: 'Link Eklendi!',
+      error: 'Bir Sorun Oluştu! Betsin_5445',
     });
   };
 
@@ -72,7 +72,7 @@ const AddLinkModal = () => {
         <Dialog.Content className="contentShow fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-white p-6 sm:p-8 lg:max-w-3xl w-[350px] sm:w-[500px] shadow-lg md:max-w-lg max-md:max-w-lg focus:outline-none">
           <div className="flex flex-row justify-between items-center mb-4">
             <Dialog.Title className="text-xl text-center font-medium mb-2 sm:mb-0 sm:mr-4">
-              Create a new Link
+              Yeni Link Ekle
             </Dialog.Title>
             <Dialog.Close className="flex flex-end justify-end">
               <div className="p-2 rounded-full flex justify-center items-center bg-gray-100 hover:bg-gray-300">
@@ -104,7 +104,7 @@ const AddLinkModal = () => {
               />
               {urlError && (
                 <small className="text-red-500 text-sm">
-                  Enter a valid URL (ex: https://hello.com)
+                  Geçerli bir Link Gir (ex: https://hello.com)
                 </small>
               )}
             </div>
@@ -114,7 +114,7 @@ const AddLinkModal = () => {
                 title="Twitter, Instagram, LinkedIn, etc"
                 component={
                   <h3 className="text-md lg:text-lg">
-                    Add as a social media link?
+                    Bu Bir Sosyal Medya Linki mi?
                   </h3>
                 }
               />
@@ -139,7 +139,7 @@ const AddLinkModal = () => {
                                 : 'bg-slate-500'
                             }`}
               >
-                Create Link{' '}
+                Link Oluştur: {' '}
                 <span role="img" aria-label="sparkling star">
                   ✨
                 </span>
